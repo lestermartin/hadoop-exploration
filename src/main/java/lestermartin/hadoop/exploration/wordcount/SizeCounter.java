@@ -38,8 +38,4 @@ public class SizeCounter {
 
 	}
 
-    public String echoString(String inbound) {
-        return inbound;
-    }
-
 }

@@ -48,8 +48,4 @@ public class WordMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 		}		
 	}
 
-    public String returnString(String s) {
-        return s;
-    }
-	
 }
