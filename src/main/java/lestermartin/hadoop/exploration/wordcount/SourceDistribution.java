@@ -11,7 +11,7 @@ public class SourceDistribution {
 	
 	public static void main(String[] args) throws Exception {
 		
-		if (args.length != 2) {
+		if(args.length != 2) {
 			System.out.println("Usage: SourceDistribution <input dir> <output dir>");
 			System.exit(-1);
 		}

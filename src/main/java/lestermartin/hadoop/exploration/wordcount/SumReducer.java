@@ -38,7 +38,7 @@ public class SumReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 		/**
 		 * For each value in the set of values passed to us by the mapper:
 		 */
-		for (IntWritable value : values) {
+		for(IntWritable value : values) {
 			/**
 			 * Add the value to the word count counter for this key.
 			 */

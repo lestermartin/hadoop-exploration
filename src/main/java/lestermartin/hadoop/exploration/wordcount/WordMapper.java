@@ -39,7 +39,7 @@ public class WordMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 		
 		List<String> words = WordUtils.splitWords(line);
 		
-		for (String word : words) {
+		for(String word : words) {
 			/*
 			 * Call the write method on the Context object to emit 
 			 * a key and a value from the map method.

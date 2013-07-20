@@ -12,8 +12,8 @@ public class WordUtils {
 	static public List<String> splitWords(String lineToSplit) {
 		List<String> words = new ArrayList<String>();
 
-		for (String word : lineToSplit.split("\\W+")) {
-			if (word.length() > 0) {
+		for(String word : lineToSplit.split("\\W+")) {
+			if(word.length() > 0) {
 				words.add(word);
 			}
 		}

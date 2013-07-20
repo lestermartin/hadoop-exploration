@@ -23,7 +23,7 @@ public class WordSizeMapper extends Mapper<LongWritable, Text, Text, IntWritable
 		
 		List<String> words = WordUtils.splitWords(value.toString());
 		
-		for (String word : words) {
+		for(String word : words) {
 			context.getCounter("WordsByLength", String.valueOf(word.length())).increment(1);
 		}		
 	}	
