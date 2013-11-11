@@ -13,7 +13,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <hadoop.version>2.0.0-cdh4.2.0</hadoop.version>
     <hadoop.mr1.version>2.0.0-mr1-cdh4.2.0</hadoop.mr1.version>
-	  <commons.lang3.version>3.1</commons.lang3.version>
+    <commons.lang3.version>3.1</commons.lang3.version>
     <spring.version>3.2.1.RELEASE</spring.version>
     <slf4j.version>1.7.2</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
