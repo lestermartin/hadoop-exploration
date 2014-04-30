@@ -1,3 +1,5 @@
+-- check out blog posting for this code at https://martin.atlassian.net/wiki/x/WYBmAQ 
+
 -- load up the base UDF (piggybank) and get a handle on the REPLACE function
 register /user/hue/shared/pig/udfs/piggybank.jar;
 define REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
@@ -34,8 +36,8 @@ salaryBreakdown = FOREACH byTitle GENERATE
 -- guarantee the order on the way out
 sortedSalaryBreakdown = ORDER salaryBreakdown by title;
 
--- dump results to the UI
---dump sortedSalaryBreakdown;
+-- display results to the UI
+--DUMP sortedSalaryBreakdown;
 
 -- save results back to HDFS
 STORE sortedSalaryBreakdown into '/user/hue/opengeorgia/pigoutput';
