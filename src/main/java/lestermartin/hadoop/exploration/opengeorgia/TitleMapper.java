@@ -9,6 +9,9 @@ import java.io.IOException;
 
 
 /**
+ * See https://martin.atlassian.net/wiki/x/M4BmAQ for more details
+ *
+ *
  * To define a map function for your MapReduce job, subclass 
  * the Mapper class and override the map method.
  * 

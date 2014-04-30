@@ -117,4 +117,28 @@ public class SalaryReportBuilderTest {
     }
 
 
+    @Test
+    public void testBuildFromErrorLog001() {
+        SalaryReport salaryReport = builder.buildFromInputCsvFormat(
+                "\"BARBER,LINDSEY E\",MISCELLANEOUS ACTIVITIES,\"5,006.50\",0.00,LBOE,COBB COUNTY SCHOOL DISTRICT,2010");
+
+        assertEquals("salary must be 5006.50", 5006.50f, salaryReport.getSalary());
+    }
+
+    @Test
+    public void testBuildFromErrorLog002() {
+        SalaryReport salaryReport = builder.buildFromInputCsvFormat(
+                "\"SPIVEY,LAURA M\",SUBSTITUTE TEACHER,\"6,006.50\",0.00,LBOE,FULTON COUNTY BOARD OF EDUCATION,2010");
+
+        assertEquals("salary must be 6006.50", 6006.50f, salaryReport.getSalary());
+    }
+
+    @Test
+    public void testBuildFromErrorLog003() {
+        SalaryReport salaryReport = builder.buildFromInputCsvFormat(
+                "\"WILSON,LIONEL \",SUBSTITUTE TEACHER,\"-1,006.50\",0.00,LBOE,FULTON COUNTY BOARD OF EDUCATION,2010");
+
+        assertEquals("salary must be -1006.50", -1006.50f, salaryReport.getSalary());
+    }
+
 }

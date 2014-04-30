@@ -8,7 +8,10 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 
 
-/** 
+/**
+ * See https://martin.atlassian.net/wiki/x/M4BmAQ for more details
+ *
+ *
  * To define a reduce function for your MapReduce job, subclass 
  * the Reducer class and override the reduce method.
  * 

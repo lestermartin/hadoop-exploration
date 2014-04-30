@@ -7,7 +7,10 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-/** 
+/**
+ * See https://martin.atlassian.net/wiki/x/M4BmAQ for more details
+ *
+ *
  * MapReduce jobs are typically implemented by using a driver class.
  * The purpose of a driver class is to set up the configuration for the
  * MapReduce job and to run the job.
