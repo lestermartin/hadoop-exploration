@@ -1,4 +1,4 @@
--- check out blog posting for this code at https://martin.atlassian.net/wiki/x/WYBmAQ 
+-- check out blog posting for this code at https://martin.atlassian.net/wiki/x/WYBmAQ
 
 -- load up the base UDF (piggybank) and get a handle on the REPLACE function
 register /user/hue/shared/pig/udfs/piggybank.jar;
